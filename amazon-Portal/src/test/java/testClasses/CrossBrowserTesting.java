@@ -35,6 +35,7 @@ public class CrossBrowserTesting extends BaseClass {
 	static ExtentTest test;
 	static ExtentHtmlReporter reporter ;
   
+	
   @BeforeTest
   @Parameters("browser")
   public void launchBrowser(String browser) {
