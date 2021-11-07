@@ -10,6 +10,8 @@ public class BaseClass {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Pratiksha\\Desktop\\VELOCITY\\Selenium_software\\chromedriver.exe");
 	       WebDriver driver = new ChromeDriver();
 	       return driver;
+	       
+	       
 	}
 	
 	public static WebDriver openFireFoxBrowser() {
