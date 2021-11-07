@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extendReport.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test thread-count="5" name="Firefox(failed)">
+    <parameter name="browser" value="FireFox"/>
+    <classes>
+      <class name="testClasses.CrossBrowserTesting">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="toVerifySportTab"/>
+          <include name="createPOM"/>
+          <include name="loginToApp"/>
+          <include name="clearPomObject"/>
+        </methods>
+      </class> <!-- testClasses.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- Firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
